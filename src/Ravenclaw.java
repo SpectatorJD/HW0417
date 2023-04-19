@@ -1,6 +1,47 @@
 public class Ravenclaw extends  Student{
+    private int smart;
+    private int wise;
+    private int witty;
+    private int creativity;
 
-    public Ravenclaw(String firstName, String lastName, String perks1, String perks2, String perks3, int perksPower1, int perksPower2, int perksPower3) {
-        super(firstName, lastName, perks1, perksPower1, perks2, perksPower2, perks3, perksPower3);
+    public Ravenclaw(String firstName, String lastName, int conjure, int transgress, int smart, int wise, int witty, int creativity) {
+        super(firstName, lastName, conjure, transgress);
+        this.smart = smart;
+        this.wise = wise;
+        this.witty = witty;
+        this.creativity = creativity;
+        //System.out.println(smart + wise + creativity);
+    }
+
+    public int getSmart() {
+        return smart;
+    }
+
+    public void setSmart(int smart) {
+        this.smart = smart;
+    }
+
+    public int getWise() {
+        return wise;
+    }
+
+    public void setWise(int wise) {
+        this.wise = wise;
+    }
+
+    public int getWitty() {
+        return witty;
+    }
+
+    public void setWitty(int witty) {
+        this.witty = witty;
+    }
+
+    public int getCreativity() {
+        return creativity;
+    }
+
+    public void setCreativity(int creativity) {
+        this.creativity = creativity;
     }
 }
