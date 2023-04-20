@@ -1,25 +1,18 @@
 public class Service {
 
 
-    private Gryffindor[] gryffindors;
+    public void calculate (Gryffindor [] gryffindors ,String firstName){
+        int power = 0;
+        for (int i = 0; i <1; i++) {
 
 
-
-    public void calculate(String firstName) {
-        System.out.println("Гриффиндор");
-        this.gryffindors = gryffindors;
-        int perks = 0;
-        if (gryffindors != null) {
-            for (int i = 0; i < gryffindors.length; i++) {
-
-                perks = gryffindors[i].getConjure() + gryffindors[i].getTransgress();
-
-            }
-            System.out.println(perks);
+            Gryffindor gryffindor = gryffindors[i];
+            power = gryffindors[i].getCourage()+gryffindors[i].getTransgress()+gryffindors[i].getConjure()+gryffindors[i].getNobility()+gryffindors[i].getHonor();
         }
+        System.out.println(power);
+
 
     }
+
+
 }
-
-
-
