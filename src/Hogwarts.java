@@ -38,7 +38,9 @@ public class Hogwarts {
         printService.print(hufflepuffs);
         printService.print(slytherins);
         Service service = new Service();
-        service.calculate(gryffindors,"Поттер");
+        service.calculate(gryffindors);
+
+
 
     }
 }
