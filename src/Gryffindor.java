@@ -14,7 +14,7 @@ public class Gryffindor extends  Student {
     }
     public void printIfo (){
         System.out.println(getFirstName() + getLastName() + getConjure() + getTransgress() + getNobility()
-        + getHonor() + getCourage());
+                + getHonor() + getCourage());
     }
 
 
