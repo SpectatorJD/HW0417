@@ -1,11 +1,11 @@
 public class Hogwarts {
     public static void main(String[] args) {
-        Gryffindor[] gryffindors =  {
+        Gryffindor[] gryffindors = {
                 new Gryffindor("Гарри", "Поттер", 80, 80,80,
                         80,80),
                 new Gryffindor("Гермиона", "Грейнджер", 75, 75,75,
                         75,70),
-                new Gryffindor("Рон ", "Уизли", 60, 50,50,
+                new Gryffindor("Рон ", "Уизли", 50, 50,50,
                         50,50),
         };
         Hufflepuff[] hufflepuffs = {
@@ -31,17 +31,14 @@ public class Hogwarts {
                         60,75,45),
                 new Ravenclaw("Маркус", "Белби", 70,50, 50,
                         60,75,45),
-        };
+    };
         PrintService printService = new PrintService();
         printService.print(gryffindors);
         printService.print(ravenclaws);
         printService.print(hufflepuffs);
         printService.print(slytherins);
         Service service = new Service();
-        service.calculatePowerWithFaculty(gryffindors);
-        service.calculatePowerWithFaculty(slytherins);
-        service.calculatePowerWithFaculty(hufflepuffs);
-        service.calculatePowerWithFaculty(ravenclaws);
+        service.calculate("Поттер");
 
     }
 }
