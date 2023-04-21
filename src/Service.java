@@ -1,4 +1,10 @@
+import java.util.Arrays;
+
 public class Service {
+    private Gryffindor [] gryffindors;
+    public Service () {
+        this.gryffindors=new Gryffindor[2];
+    }
 
 
     private int i;
@@ -65,8 +71,19 @@ public class Service {
 
         }
         Ravenclaw ravenclaw = ravenclaws[i];
-        System.out.println("Лучшим учеником Пуфендуя является  " + ravenclaw.getFirstName() + " у него " + maxPower + " баллов");
+        System.out.println("Лучшим учеником Когтеврана является  " + ravenclaw.getFirstName() + " у него " + maxPower + " баллов");
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Service service = (Service) o;
+        return Arrays.equals(gryffindors, service.gryffindors);
+    }
 
+    @Override
+    public int hashCode() {
+        return Arrays.hashCode(gryffindors);
+    }
 }
