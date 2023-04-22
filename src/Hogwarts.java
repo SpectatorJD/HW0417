@@ -37,11 +37,11 @@ public class Hogwarts {
         printService.print(ravenclaws);
         printService.print(hufflepuffs);
         printService.print(slytherins);
-        Service service = new Service();
-        service.calculatePowerWithFaculty(gryffindors);
-        service.calculatePowerWithFaculty(slytherins);
-        service.calculatePowerWithFaculty(hufflepuffs);
-        service.calculatePowerWithFaculty(ravenclaws);
-
+        CountServiceHogwarts service = new CountServiceHogwarts();
+        service.calculatePowerWithFaculty(gryffindors[1],gryffindors[2]);
+        service.calculatePowerWithFaculty(slytherins[0],slytherins[1]);
+        service.calculatePowerWithFaculty(hufflepuffs[0],hufflepuffs[1]);
+        service.calculatePowerWithFaculty(ravenclaws[0],ravenclaws[1]);
+        service.countAnyStudent(gryffindors[0],slytherins[1]);
     }
 }

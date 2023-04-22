@@ -44,4 +44,14 @@ public class Student {
     public void setTransgress(int transgress) {
         this.transgress = transgress;
     }
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", conjure=" + conjure +
+                ", transgress=" + transgress +
+                '}';
+    }
 }

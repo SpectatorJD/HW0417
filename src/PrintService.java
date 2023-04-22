@@ -1,4 +1,7 @@
 public class PrintService {
+    public void print (Student student){
+        System.out.println(student);
+    }
     public void print(Gryffindor[] gryffindors) {
         System.out.println("Гриффиндор");
         for (int i = 0; i < gryffindors.length; i++) {
